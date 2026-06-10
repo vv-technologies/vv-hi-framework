@@ -17,6 +17,7 @@ It is the clean public home for:
 
 - [`VV_LANGUAGE_SPEC.md`](./VV_LANGUAGE_SPEC.md)
 - [`PUBLICATION_RECORD.md`](./PUBLICATION_RECORD.md)
+- [`COMMERCIAL_AND_LEGAL_POSITIONING.md`](./COMMERCIAL_AND_LEGAL_POSITIONING.md)
 
 ## Framework Scope
 
@@ -39,6 +40,7 @@ The `VV Hi Framework` currently groups:
 
 ## Related Repositories
 
+- [vv-hybrid-univers-manifesto](https://github.com/vv-technologies/vv-hybrid-univers-manifesto)
 - [vv-nexus](https://github.com/vv-technologies/vv-nexus)
 - [vv-lea](https://github.com/vv-technologies/vv-lea)
 - [vv-pulse](https://github.com/vv-technologies/vv-pulse)
