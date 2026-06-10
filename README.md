@@ -15,6 +15,7 @@ It is the clean public home for:
 
 ## Start Here
 
+- `index.html`
 - [`VV_LANGUAGE_SPEC.md`](./VV_LANGUAGE_SPEC.md)
 - [`PUBLICATION_RECORD.md`](./PUBLICATION_RECORD.md)
 - [`COMMERCIAL_AND_LEGAL_POSITIONING.md`](./COMMERCIAL_AND_LEGAL_POSITIONING.md)

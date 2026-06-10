@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>VV Hi Framework</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0a0a;
+      --panel:#121212;
+      --panel2:#181818;
+      --text:#f3efe7;
+      --muted:#b7b0a1;
+      --line:rgba(255,255,255,.08);
+      --gold:#c7a65a;
+      --gold-soft:rgba(199,166,90,.14);
+      --serif:'Instrument Serif', Georgia, serif;
+      --sans:'Inter', sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at top, rgba(199,166,90,.12), transparent 38%),
+        linear-gradient(180deg, #0a0a0a, #0d0d0d 42%, #111 100%);
+      color:var(--text);
+      font-family:var(--sans);
+      line-height:1.6;
+    }
+    .wrap{max-width:1120px;margin:0 auto;padding:40px 24px 96px}
+    .hero{
+      min-height:72vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:24px;
+      padding:48px 0 40px;
+    }
+    .eyebrow{
+      color:var(--gold);
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-size:12px;
+      font-weight:600;
+    }
+    h1{
+      margin:0;
+      font-family:var(--serif);
+      font-size:clamp(52px, 10vw, 120px);
+      line-height:.95;
+      letter-spacing:-.04em;
+      max-width:900px;
+    }
+    .lede{
+      max-width:760px;
+      font-size:clamp(18px, 2.5vw, 24px);
+      color:var(--muted);
+    }
+    .cta-row{display:flex;flex-wrap:wrap;gap:14px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:200px;
+      padding:14px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:600;
+      border:1px solid var(--line);
+      color:var(--text);
+      background:var(--panel);
+    }
+    .btn.primary{
+      background:var(--gold);
+      color:#111;
+      border-color:transparent;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+      margin-top:40px;
+    }
+    .card{
+      padding:24px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:linear-gradient(180deg, var(--panel), var(--panel2));
+    }
+    .card h3{
+      margin:0 0 8px;
+      font-size:20px;
+    }
+    .card p{
+      margin:0;
+      color:var(--muted);
+    }
+    .section{
+      padding-top:32px;
+      margin-top:32px;
+      border-top:1px solid var(--line);
+    }
+    .section h2{
+      margin:0 0 14px;
+      font-family:var(--serif);
+      font-size:clamp(34px, 5vw, 56px);
+      letter-spacing:-.03em;
+    }
+    .stack{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:16px;
+      margin-top:22px;
+    }
+    .pill{
+      padding:18px;
+      border-radius:20px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+    }
+    .pill strong{
+      display:block;
+      margin-bottom:8px;
+      color:var(--gold);
+      font-size:12px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .note{
+      margin-top:22px;
+      padding:20px 22px;
+      border-left:3px solid var(--gold);
+      background:var(--gold-soft);
+      border-radius:0 18px 18px 0;
+      color:var(--muted);
+    }
+    footer{
+      margin-top:48px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    @media (max-width: 860px){
+      .grid,.stack{grid-template-columns:1fr}
+      .hero{min-height:auto;padding-top:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">VV Hybrid Universe · Invention Layer</div>
+      <h1>VV Hi Framework</h1>
+      <p class="lede">A local-first framework for identity, memory, behavior, context and learning in personal AI.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="./VV_LANGUAGE_SPEC.md">Read The Specification</a>
+        <a class="btn" href="./PUBLICATION_RECORD.md">View Publication Record</a>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>What it is</h3>
+          <p>The invention layer of the VV Hybrid Universe, separated from product screens and implementation noise.</p>
+        </div>
+        <div class="card">
+          <h3>What it defines</h3>
+          <p>Language, identity, architecture, autonomy, learning, context and exchange for personal AI systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Public Structure</h2>
+      <div class="stack">
+        <div class="pill">
+          <strong>Vision</strong>
+          <span>`vv-hybrid-univers-manifesto` explains the worldview.</span>
+        </div>
+        <div class="pill">
+          <strong>Invention</strong>
+          <span>`vv-hi-framework` declares the framework layer.</span>
+        </div>
+        <div class="pill">
+          <strong>System Core</strong>
+          <span>`vv-nexus` carries the implementation center.</span>
+        </div>
+        <div class="pill">
+          <strong>Products</strong>
+          <span>`LEA`, `VNEX`, `VV Pulse`, and related surfaces turn the system into real products.</span>
+        </div>
+      </div>
+      <div class="note">
+        This repository is a public invention record and authorship trail. It is not a substitute for formal legal counsel, trademark review, or patent strategy.
+      </div>
+    </section>
+
+    <footer>
+      Part of the <a href="https://github.com/vv-technologies" style="color:var(--text)">VV Hybrid Universe</a>.
+    </footer>
+  </div>
+</body>
+</html>
